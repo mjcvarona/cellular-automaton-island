@@ -1,14 +1,14 @@
 //Set resolution of the grid
 var reso = 5;
 
-function setup() {
+function setup(){
   createCanvas(600, 600);
   colorMode(HSB);
   thisGrid = createGrid(reso);
-  rainfall=false;
+  rainfall = false;
 }
 
-function draw() {
+function draw(){
   background(220);
   //Perform one step of the CA algo and print
   temp = stepCA(thisGrid);
@@ -19,10 +19,10 @@ function draw() {
 
 function keyPressed(){
   //Toggle rainfall when key is pressed
-  if(rainfall==true){
-    rainfall=false;
-  }else{
-    rainfall=true;
+  if (rainfall == true) {
+    rainfall = false;
+  } else{
+    rainfall = true;
   }
 }
 
